@@ -37,7 +37,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@prisma/client": "^4.15.0"
+		"@prisma/client": "^4.15.0",
+		"sveltekit-search-params": "^1.0.12"
 	},
 	"prisma": {
 		"seed": "pnpx vite-node prisma/seed.ts"

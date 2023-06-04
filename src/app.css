@@ -3,13 +3,21 @@
 @tailwind utilities;
 
 body {
-  @apply p-5 bg-slate-900 text-slate-50 min-h-screen
+  @apply p-5 bg-slate-900 text-slate-50 min-h-screen;
 }
 
 h1 {
-  @apply text-3xl font-bold
+  @apply text-3xl font-bold;
 }
 
 pre {
   @apply bg-slate-800 rounded-md p-4 block mt-4 max-w-full;
+}
+
+button, [type='button'], [type='reset'], [type='submit'] {
+  @apply bg-blue-500 py-2 rounded-md hover:bg-blue-600 transition-colors;
+}
+
+input {
+  @apply bg-transparent border border-slate-400 rounded-md p-2 text-sm;
 }

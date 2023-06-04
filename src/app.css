@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 body {
-  @apply p-5 bg-slate-900 text-slate-50
+  @apply p-5 bg-slate-900 text-slate-50 min-h-screen
 }
 
 h1 {
-  @apply leading-3 text-3xl font-bold
+  @apply text-3xl font-bold
 }

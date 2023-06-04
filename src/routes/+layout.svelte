@@ -1,6 +1,11 @@
 <script>
+	import { page } from '$app/stores';
 	import '../app.css';
 </script>
+
+<svelte:head>
+	<title>{$page.data.post?.title || 'Home'} | Post</title>
+</svelte:head>
 
 <nav class="flex gap-4">
 	<a href="/">Home</a>

@@ -9,3 +9,7 @@ body {
 h1 {
   @apply text-3xl font-bold
 }
+
+pre {
+  @apply bg-slate-800 rounded-md p-4 block mt-4;
+}

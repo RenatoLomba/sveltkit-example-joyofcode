@@ -12,9 +12,3 @@
 <pre>
   {JSON.stringify($page, null, 2)}
 </pre>
-
-<style lang="postcss">
-	pre {
-		@apply bg-slate-800 rounded-md p-4 block mt-4;
-	}
-</style>

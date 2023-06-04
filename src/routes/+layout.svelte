@@ -6,6 +6,7 @@
 	<a href="/">Home</a>
 	<a href="/posts">Posts</a>
 	<a href="/posts-ssr">Posts SSR</a>
+	<a href="/posts-layout-load">Posts Load Data on Layout</a>
 </nav>
 
 <div class="mt-4">

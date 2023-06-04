@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>{$page.data.post?.title || 'Home'} | Post</title>
+	<title>{$page.data.post?.title || 'Home'} | Posts</title>
 </svelte:head>
 
 <nav class="flex gap-4">

@@ -1,14 +1,33 @@
 <script lang="ts">
+	import { invalidate /* invalidateAll */ } from '$app/navigation';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
 
 	$: ({ posts } = data);
+
+	function rerunLoadFunction() {
+		// a)
+		invalidate('app:posts');
+
+		// b)
+		// invalidate('/api/posts')
+
+		// c)
+		// invalidate(url => url.href.includes('posts'))
+
+		// d)
+		// invalidateAll()
+	}
 </script>
 
 <h1>Posts on SSR</h1>
 
-<ul class="mt-4">
+<div class="my-4">
+	<button type="button" on:click={rerunLoadFunction}>Reload</button>
+</div>
+
+<ul class="mt-10">
 	Showing {posts.length} posts.
 
 	{#each posts as post}
